@@ -29,3 +29,17 @@ Id  Name                Grades
 102 Piero della Francesca   50
 120 Francesca da Polenta    84
 */
+
+
+//SNACK 1
+const invitati = ['Brad Pitt', 'Johnny Depp', 'Lady Gaga', 'Cristiano Ronaldo', 'Georgina Rodriguez', 'Chiara Ferragni', 'Fedez', 'George Clooney', 'Amal Clooney', 'Maneskin']
+
+const table = 'Tavolo Vip'
+
+const invitatiVip = invitati.map((element, index) => ({
+    nome: element,
+    posto : index + 1,
+    tavolo : table
+}))
+console.log(invitatiVip)
+
