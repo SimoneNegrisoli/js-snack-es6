@@ -9,7 +9,24 @@ nome del tavolo, (tableName)
 nome dell'ospite,  (guestName)
 posto occupato. (place)
 Generiamo e stampiamo in console la lista per i segnaposto.
+*/
 
+
+//SNACK 1
+const invitati = ['Brad Pitt', 'Johnny Depp', 'Lady Gaga', 'Cristiano Ronaldo', 'Georgina Rodriguez', 'Chiara Ferragni', 'Fedez', 'George Clooney', 'Amal Clooney', 'Maneskin']
+
+const table = 'Tavolo Vip'
+
+const invitatiVip = invitati.map((element, index) => ({
+    nome: element,
+    posto : index + 1,
+    tavolo : table
+}))
+console.log(invitatiVip)
+
+
+
+/*
 SNACK 2
 
 Abbiamo un elenco degli studenti di una facoltà, identificati da id, Nome e somma totale dei loro voti di esame...
@@ -31,15 +48,52 @@ Id  Name                Grades
 */
 
 
-//SNACK 1
-const invitati = ['Brad Pitt', 'Johnny Depp', 'Lady Gaga', 'Cristiano Ronaldo', 'Georgina Rodriguez', 'Chiara Ferragni', 'Fedez', 'George Clooney', 'Amal Clooney', 'Maneskin']
+// SANCK 2
 
-const table = 'Tavolo Vip'
+const studenti = [
+    {
+        id : '213',
+        name:'Marco della Rovere',
+        grades : '78'
+    },
+    {
+        id : '110',
+        name:'Paola Cortellessa',
+        grades : '96'
+    },
+    {
+        id : '250',
+        name:'Andrea Mantegna',
+        grades : '48'
+    },
+    {
+        id : '145',
+        name:'Gaia Borromini',
+        grades : '74'
+    },
+    {
+        id : '196',
+        name:'Luigi Grimaldello',
+        grades : '68'
+    },
+    {
+        id : '102',
+        name:'Piero della Francesca',
+        grades : '50'
+    },
+    {
+        id : '120',
+        name:'Francesca da Polenta',
+        grades : '84'
+    }
+]
 
-const invitatiVip = invitati.map((element, index) => ({
-    nome: element,
-    posto : index + 1,
-    tavolo : table
-}))
-console.log(invitatiVip)
+//Punto 1
+
+
+const targheStudenti = studenti.map((el)=> {
+    return el.name.toLocaleUpperCase()
+})
+console.log(targheStudenti)
+
 
