@@ -88,12 +88,18 @@ const studenti = [
     }
 ]
 
-//Punto 1
-
+// Punto 1
 
 const targheStudenti = studenti.map((el)=> {
     return el.name.toLocaleUpperCase()
 })
 console.log(targheStudenti)
+
+// Punto 2
+
+const gradesOver70 = studenti.filter((el)=> {
+    return el.grades > 70
+})
+console.log(gradesOver70)
 
 
