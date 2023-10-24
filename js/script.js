@@ -102,4 +102,9 @@ const gradesOver70 = studenti.filter((el)=> {
 })
 console.log(gradesOver70)
 
+// Punto 3
 
+const newScore = studenti.filter((el)=> {
+    return el.grades > 70 && el.id > 120
+})
+console.log(newScore)
