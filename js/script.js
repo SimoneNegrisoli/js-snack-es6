@@ -18,9 +18,9 @@ const invitati = ['Brad Pitt', 'Johnny Depp', 'Lady Gaga', 'Cristiano Ronaldo', 
 const table = 'Tavolo Vip'
 
 const invitatiVip = invitati.map((element, index) => ({
-    nome: element,
-    posto : index + 1,
-    tavolo : table
+    guestName: element,
+    place : index + 1,
+    tableName : table
 }))
 console.log(invitatiVip)
 
