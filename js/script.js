@@ -157,6 +157,11 @@ for(let el of bikes){
 let {nome, peso} = pesoMinore;
 console.log(`La bici con peso minore é: ${nome} e pesa ${peso}kg`)
 
+//Bonus 
+const sn3 = document.getElementById('snack3')
+const myDivSn3 = document.createElement('div')
+sn3.append(myDivSn3)
+myDivSn3.innerHTML = `La bici con peso minore é: ${nome} e pesa ${peso}kg`
 
 
 /*SNACKS 4
@@ -216,17 +221,18 @@ const footballTeams = [
     console.log(footballTeams)
 
 const resultTeam = footballTeams.map ((el)=>{
-    return {
+    const {squadra, falliSubiti} = el;
+    return{
         squadra : el.squadra,
         falliSubiti : el.falliSubiti
     }
 })
-
 console.log(resultTeam)
 
-let {squadra, falliSubiti} = resultTeam
-
-console.log(squadra)
 
 //Bonus
 
+const sn4 = document.getElementById('snack4')
+const myDivSn4 = document.createElement('div')
+sn4.append(myDivSn4)
+myDivSn4.innerHTML = `${resultTeam}`
