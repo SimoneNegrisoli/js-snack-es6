@@ -210,29 +210,52 @@ const footballTeams = [
 ]
     //punto 2
 
-    function getRndInteg (min, max){
-        return Math.floor(Math.random() * (max - min + 1)) + min;
-    }
+function getRndInteg (min, max){
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
 
-    footballTeams.forEach((el)=>{
-        el.punti = getRndInteg(1, 10);
-        el.falliSubiti = getRndInteg (1,10);
-    })
-    console.log(footballTeams)
+footballTeams.forEach((el)=>{
+    el.punti = getRndInteg(1, 10);
+    el.falliSubiti = getRndInteg (1,10);
+})
+console.log(footballTeams)
+
+let squadra = [];
+let falliSubiti = [];
 
 const resultTeam = footballTeams.map ((el)=>{
-    const {squadra, falliSubiti} = el;
+    squadra.push(el.squadra)
+    falliSubiti.push(el.falliSubiti)
     return{
         squadra : el.squadra,
         falliSubiti : el.falliSubiti
     }
 })
+console.log(squadra)
 console.log(resultTeam)
+
+
 
 
 //Bonus
 
-const sn4 = document.getElementById('snack4')
-const myDivSn4 = document.createElement('div')
-sn4.append(myDivSn4)
-myDivSn4.innerHTML = `${resultTeam}`
+// const classificaFinale = footballTeams.map((el, index )=>({
+//     squadra : el.squadra,
+//     falliSubiti : falliSubiti[index]
+// }))
+
+// console.log(classificaFinale)
+
+// let {dadsas , dsakjda} = classificaFinale;
+
+
+// const sn4 = document.getElementById('snack4')
+// const myDivSn4 = document.createElement('div')
+// sn4.append(myDivSn4)
+// myDivSn4.innerHTML = `
+// <div>
+// <h2> Le squadre di calcio sono e i loro falli: </h2> 
+// ${classificaFinale}
+// </div>
+
+//  `
