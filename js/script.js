@@ -223,3 +223,10 @@ const resultTeam = footballTeams.map ((el)=>{
 })
 
 console.log(resultTeam)
+
+let {squadra, falliSubiti} = resultTeam
+
+console.log(squadra)
+
+//Bonus
+
