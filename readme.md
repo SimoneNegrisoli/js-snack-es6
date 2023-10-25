@@ -20,3 +20,20 @@ We have a list of students of a faculty, identified by id, Name and total sum of
 ES (Marco della Rovere => MARCO DELLA ROVERE);
 2. We need to create a list of all students who have a total grade above 70
 3. We need to create a list of all students who have a total grade above 70 and an id above 120
+
+
+### SNACKS 3
+
+Create an array of objects:
+Each object will describe a racing bike with the following properties: name and weight.
+Print the bike with the least weight in the console using destructuring and template literal
+
+### SNACKS 4
+
+Create an array of football team objects. Each team will have different properties: name, points scored, fouls suffered.
+Name will be the only property to be filled in, the others will all be set to 0.
+Generate random numbers instead of 0s in the properties: Points scored and fouls conceded.
+Finally, using destructuring we create a new array whose elements contain only names and fouls suffered and we print everything in the console.
+
+### *BONUSES*
+Print on page as well as in console!
