@@ -183,22 +183,22 @@ creare un html element per il contenitore degli elementi
     //punto 1
 const footballTeams = [
     {
-        nome: "Milan",
+        squadra: "Milan",
         punti: 0,
         falliSubiti: 0
     },
     {
-        nome: "Juventus",
+        squadra: "Juventus",
         punti: 0,
         falliSubiti: 0
     },
     {
-        nome: "Inter",
+        squadra: "Inter",
         punti: 0,
         falliSubiti: 0
     },
     {
-        nome: "Verona",
+        squadra: "Verona",
         punti: 0,
         falliSubiti: 0
     }
@@ -214,3 +214,12 @@ const footballTeams = [
         el.falliSubiti = getRndInteg (1,10);
     })
     console.log(footballTeams)
+
+const resultTeam = footballTeams.map ((el)=>{
+    return {
+        squadra : el.squadra,
+        falliSubiti : el.falliSubiti
+    }
+})
+
+console.log(resultTeam)
