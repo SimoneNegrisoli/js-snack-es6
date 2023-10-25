@@ -108,3 +108,93 @@ const newScore = studenti.filter((el)=> {
     return el.grades > 70 && el.id > 120
 })
 console.log(newScore)
+
+
+
+/*SNACKS 3
+Creare un array di oggetti:
+Ogni oggetto descriverà una bici da corsa con le seguenti proprietà: nome e peso.
+Stampare in console la bici con peso minore utilizzando destructuring e template literal*/
+
+
+
+/*
+-creo un array con almeno 3 oggetti e una avra peso minore
+-creo una variabile peso minore
+- creo un ciclo for che confronta peso tra le bici 
+-distrutturo l'oggetti bici nelle variabili nome e peso
+-stampo queste variabili con inner html*/
+
+const bikes = [
+    {
+        nome : 'Kona',
+        peso :  6.8
+    },
+    {
+        nome : 'Giant',
+        peso :  7
+    },
+    {
+        nome : 'Bergamont',
+        peso :  6.5
+    },
+    {
+        nome : 'BMC',
+        peso :  9
+    },
+    {
+        nome : 'Lapierre',
+        peso :  8
+    }
+]
+
+let pesoMinore = bikes[0];
+
+for(let el of bikes){
+    if(el.peso < pesoMinore.peso )
+    pesoMinore = el
+}
+let {nome, peso} = pesoMinore;
+console.log(`La bici con peso minore é: ${nome} e pesa ${peso}kg`)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*SNACKS 4
+Creare un array di oggetti di squadre di calcio. Ogni squadra avrà diverse proprietà: nome, punti fatti, falli subiti.
+Nome sarà l’unica proprietà da compilare, le altre saranno tutte settate a 0.
+Generare numeri random al posto degli 0 nelle proprietà: Punti fatti e falli subiti.
+Infine usando la destrutturazione creiamo un nuovo array i cui elementi contengono solo nomi e falli subiti e stampiamo tutto in console.
+
+BONUSES
+Stampare in pagina oltre che in console!*/
+
+
+
+/*SN4
+- creo un array di squadre di calcio con tre proprietà
+- ciclo array e creo numeri rnd 
+-ciclo di nuovo l'arrya e salvo un nuovo oggetto tramite destrutturazione con squadre e falli subiti in un nuovo array
+-stampo in console
+
+
+bonus 
+creare un html element per il contenitore degli elementi 
+
+
+
+*/
