@@ -159,21 +159,6 @@ console.log(`La bici con peso minore é: ${nome} e pesa ${peso}kg`)
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*SNACKS 4
 Creare un array di oggetti di squadre di calcio. Ogni squadra avrà diverse proprietà: nome, punti fatti, falli subiti.
 Nome sarà l’unica proprietà da compilare, le altre saranno tutte settate a 0.
@@ -182,8 +167,6 @@ Infine usando la destrutturazione creiamo un nuovo array i cui elementi contengo
 
 BONUSES
 Stampare in pagina oltre che in console!*/
-
-
 
 /*SN4
 - creo un array di squadre di calcio con tre proprietà
@@ -194,7 +177,40 @@ Stampare in pagina oltre che in console!*/
 
 bonus 
 creare un html element per il contenitore degli elementi 
-
-
-
 */
+
+
+    //punto 1
+const footballTeams = [
+    {
+        nome: "Milan",
+        punti: 0,
+        falliSubiti: 0
+    },
+    {
+        nome: "Juventus",
+        punti: 0,
+        falliSubiti: 0
+    },
+    {
+        nome: "Inter",
+        punti: 0,
+        falliSubiti: 0
+    },
+    {
+        nome: "Verona",
+        punti: 0,
+        falliSubiti: 0
+    }
+]
+    //punto 2
+
+    function getRndInteg (min, max){
+        return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
+
+    footballTeams.forEach((el)=>{
+        el.punti = getRndInteg(1, 10);
+        el.falliSubiti = getRndInteg (1,10);
+    })
+    console.log(footballTeams)
